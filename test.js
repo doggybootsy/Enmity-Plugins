@@ -1,1 +1,1 @@
-function i(n){window.enmity.plugins.registerPlugin(n)}const t={name:"ExamplePlugin",commands:[],onStart(){},onStop(){}};i(t);
+function e(n){window.enmity.plugins.registerPlugin(n)}const i={name:"ExamplePlugin",commands:[],onStart(){alert("Hello World!")},onStop(){}};e(i);
