@@ -1,8 +1,7 @@
 import { Plugin, registerPlugin } from "enmity-api/plugins";
 
 const showHiddenChannels:Plugin = {
-  name: "Show Hidden Channels",
-  commands: [],
+  name: "showHiddenChannels",
   onStart() {
     
   },

@@ -1,1 +1,1 @@
-function i(n){window.enmity.plugins.registerPlugin(n)}const o={name:"Show Hidden Channels",commands:[],onStart(){},onStop(){}};i(o);
+function i(n){window.enmity.plugins.registerPlugin(n)}const e={name:"showHiddenChannels",onStart(){},onStop(){}};i(e);
