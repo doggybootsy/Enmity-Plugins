@@ -21,7 +21,7 @@ export default defineConfig({
     nodeResolve(),
     commonjs(),
     esbuild({ minify: true, target: "ES2019" }),
-    createPluginJson(),
+    createPluginJson()
   ]
 });
 
@@ -31,10 +31,10 @@ function createPluginJson(options = {}): Plugin {
     writeBundle: (err) => {
       const info = require('./package.json');
       const data = {
-        "name": pluginName,
-        "description": info?.description ?? "No description was provided.",
-        "author": info?.author?.name ?? "Unknown",
-        "version": info?.version ?? "1.0.0"
+        name: pluginName,
+        description: info?.description ?? "No description was provided.",
+        author: info?.author?.name ?? "Unknown",
+        version: info?.version ?? "1.0.0"
       };
 
       writeFileSync(`dist/${pluginName}.json`, JSON.stringify(data, null, "\t"));
